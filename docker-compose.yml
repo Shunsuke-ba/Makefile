@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  testdb:
+    container_name: makefile_db
+    image: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+    ports:
+      - "3313:3306"
+    
